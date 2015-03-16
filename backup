@@ -23,8 +23,8 @@ for file in "$@"; do
             ;;
         *)
             fileloc=$(readlink -e "$file")
-        echo $fileloc
-        echo $fileloc >> "$backup"
+            echo $fileloc
+            echo $fileloc >> "$backup"
     esac
 done
 
